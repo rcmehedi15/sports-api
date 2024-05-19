@@ -1,0 +1,47 @@
+.player-card {
+    margin: 10px 0;
+}
+
+.cart-icon {
+    font-size: 24px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-buttons i {
+    margin-right: 5px;
+}
+
+.show-more-btn {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-container,
+.player-container {
+    width: 100%;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Players | API </title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+ <div class="bg-light">
+  <nav class="container navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"> Player</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Player</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class=" container d-flex justify-content-center navbar navbar-light bg-light">
+        <div class="input-group col-12 col-md-8 search-container">
+            <input type="text" id="searchBox" class="form-control" placeholder="Search for players...">
+            <div class="input-group-append">
+                <button class="btn btn-primary" onclick="searchPlayers()">Search</button>
+            </div>
+        </div>
+        <div class="cart-icon">
+            <i class="bi bi-cart"></i>
+            <span id="totalMembers" class="cart-badge">0</span>
+        </div>
+    </div>
+
+ </div>
+    <div class="container player-container">
+        <div class="row" id="playerContainer"></div>
+        <div class="show-more-btn" id="showMoreContainer">
+            <button class="btn btn-secondary" onclick="showMorePlayers()">Show More</button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="playerModal" tabindex="-1" aria-labelledby="playerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="playerModalLabel">Player Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img id="playerImage" src="" alt="Player Image" class="img-fluid mb-3">
+                    <h3 id="playerName"></h3>
+                    <p id="playerGender"></p>
+                    <p id="playerDateBorn"></p>
+                    <p id="playerNationality"></p>
+                    <p id="playerTeam"></p>
+                    <p id="playerDescription"></p>
+                    <div class="social-buttons">
+                        <a id="playerFacebook" href="#" target="_blank" class="btn btn-primary">
+                            <i class="bi bi-facebook"></i> Facebook
+                        </a>
+                        <a id="playerWebsite" href="#" target="_blank" class="btn btn-secondary">
+                            <i class="bi bi-globe"></i> Website
+                        </a>
+                        <a id="playerInstagram" href="#" target="_blank" class="btn btn-danger">
+                            <i class="bi bi-instagram"></i> Instagram
+                        </a>
+                        <a id="playerTwitter" href="#" target="_blank" class="btn btn-info">
+                            <i class="bi bi-twitter"></i> Twitter
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-4 mt-4">
+      <div class="container text-center text-md-left">
+            
+      </div>
+      <div class="text-center py-3">
+          &copy; 2024 Sports API. All rights reserved.
+      </div>
+  </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
