@@ -45,3 +45,37 @@
 .player-container {
     width: 100%;
 }
+
+/* Media queries for responsiveness */
+@media (max-width: 767.98px) {
+    .cart-icon {
+        top: 10px;
+        right: 10px;
+    }
+
+    .cart-badge {
+        padding: 3px 7px;
+        font-size: 12px;
+    }
+
+    .player-card {
+        margin-bottom: 15px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .social-buttons a {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .show-more-btn {
+        margin: 10px 0;
+    }
+}

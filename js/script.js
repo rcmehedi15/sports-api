@@ -52,7 +52,7 @@ function displayPlayerCard(player) {
     const container = document.getElementById('playerContainer');
     
     const playerCard = document.createElement('div');
-    playerCard.classList.add('col-4', 'player-card');
+    playerCard.classList.add('col-12', 'col-md-4', 'player-card');
     playerCard.innerHTML = `
         <div class="card">
             <img src="${player.strCutout || 'https://via.placeholder.com/150'}" class="card-img-top" alt="Player Image">
